@@ -1,5 +1,8 @@
 package packetforger;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -230,5 +233,21 @@ class PacketForgerBuilder {
             i++;
         }
         System.out.flush();
+    }
+    
+    public void save() {
+        String path = "packet.txt";
+
+        try {
+            FileOutputStream fos = new FileOutputStream(path);
+            for (Byte ch : this.data) {
+                fos.write(ch);
+            }
+            fos.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println("FileNotFoundException : " + ex);
+        } catch (IOException ioe) {
+            System.out.println("IOException : " + ioe);
+        }
     }
 }
