@@ -235,6 +235,11 @@ class PacketForgerBuilder {
         System.out.flush();
     }
     
+    public void vhdloutput() {
+        Bin2vhdlConvert converter = new Bin2vhdlConvert(this.data);
+        System.out.println(converter.getVhdl());
+    }
+    
     public void save() {
         String path = "packet.txt";
 
