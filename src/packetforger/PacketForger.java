@@ -11,15 +11,16 @@ public class PacketForger {
      */
     public static void main(String[] args) {
         PacketForgerBuilder packet = new PacketForgerBuilder();
-        packet.setProtocol("tcp");
-        packet.setSourceIp("173.194.66.94");
-        packet.setDestinationIp("129.12.219.126");
-        packet.setSourcePort(9977);
-        packet.setDestinationPort(41439);
-        packet.setContent("test1testhesheAAA");
+        packet.setProtocol("udp");
+        packet.setSourceIp("12.2.3.4");
+        packet.setDestinationIp("127.0.0.1");
+        packet.setSourcePort(37);
+        packet.setDestinationPort(200);
+        packet.setContent("heher his ___sher_");
         packet.forge();
         
         //packet.hexoutput();
-        packet.output();
+        //packet.output();
+        packet.vhdloutput();
     }
 }
