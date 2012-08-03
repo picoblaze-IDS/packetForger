@@ -16,7 +16,7 @@ import org.junit.runners.Suite;
  * @author 4m0ni4c
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({packetforger.PacketForgerBuilderTest.class, packetforger.PacketForgerTest.class})
+@Suite.SuiteClasses({PacketForgerBuilderTest.class, Bin2vhdlConvertTest.class, PacketForgerTest.class})
 public class PacketforgerSuite {
 
     @BeforeClass

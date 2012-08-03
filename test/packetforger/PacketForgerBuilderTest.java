@@ -148,7 +148,6 @@ public class PacketForgerBuilderTest {
         instance.setDestinationPort(200);
         instance.setContent("heher his ___sher_");
         instance.forge();
-        instance.vhdloutput();
     }
 
     /**
