@@ -26,3 +26,17 @@ In raw data:
 In VHDL:
 
     packet.vhdloutput();
+
+## Contact
+
+    David Carnot
+    dc386@kent.ac.uk
+
+    Jean-Charles Le Goff
+    jcl28@kent.ac.uk
+
+    Valentin Briand
+    vb86@kent.ac.uk
+
+    Michael Bishaey
+    mb551@kent.ac.uk
